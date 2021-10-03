@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0497E1;
+}
+
+.navbar {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    width: 188px;
+    height: 34px;
+    margin-left: 100px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+    margin-right: 100px;
+}
+
+ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    grid-area: profile;
+}
+
+.profile a {
+    color: #0497E1;
+    text-decoration: none;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    background-color: azure;
+    border-radius: 100px;
+    border: 2px solid #950952;
+    box-sizing: border-box;
+}
+
+.username {
+    font-size: .85em;
+    color: #0497E1;
+}
+
+
+.container-main {
+    width: 80%;
+    height: 88vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        'sidebar main-content';
+    grid-template-columns: auto 3fr;
+    grid-template-rows: 90%;
+    align-content: center;
+    margin: auto;
+    column-gap: 24px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: white;
+    max-width: fit-content;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 48px;
+}
+
+.sidebar-picture {
+    width: 240px;
+    height: 240px;
+    background-color: azure;
+    border-radius: 200px;
+    border: 4px solid #950952;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+.sidebar-username {
+    text-align: center;
+
+}
+
+.sidebar-username a {
+    text-decoration: none;
+    color: #333;
+    font-size: .95em;
+}
+
+.sidebar-info {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.sidebar-info img {
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar-info li {
+    display: flex;
+    column-gap: 24px;
+}
+
+.sidebar-info li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+
+}
